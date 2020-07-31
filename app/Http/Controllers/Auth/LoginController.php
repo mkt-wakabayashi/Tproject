@@ -27,8 +27,6 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
-    //メイン画面ができたらログイン後の遷移先指定
-    ##protected $redirectTo = '/#';
 
     /**
      * Create a new controller instance.
