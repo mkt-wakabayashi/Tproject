@@ -7,6 +7,7 @@
     width: 100%;
 }
 
+/* ヘッダー */
 header {
     height: 65px;
 }
@@ -27,6 +28,42 @@ header p {
     margin: 25px 40px 0 20px;
 }
 
+/* ナビゲーション */
+.navigation {
+    margin: 20px 0 0 0;
+    border: double #999999;
+    border-width: 7px 0 7px 0;
+    height: 70px;
+}
+
+ul {
+    position: relative;
+}
+
+.list {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.logout {
+    position: absolute;
+    right: 80px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(253, 85, 43);
+}
+
+/* フッター */
 footer {
     height: 80px;
     background-color: black;
