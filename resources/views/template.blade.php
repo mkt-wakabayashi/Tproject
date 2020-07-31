@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"  href="{{asset('assets/css/index.css')}}">
-  <title>ameeeda 勤怠管理</title>
+  <title>ameeeda 勤怠管理システム</title>
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <h1>ameeeda</h1>
+      <p>勤怠管理システム</p>
+      <img class="logo "src="img/logo.png" alt="logo">
     </header>
     @yield('content')
     <footer>
-      <small>Copyright 2020 ameeeda,Inc.</small>
+      <img class="footer-logo" src="img/logo-black.png" alt="logo">
     </footer>
   </div>
 </body>

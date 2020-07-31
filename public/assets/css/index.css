@@ -3,7 +3,37 @@
 }
 
 .wrapper {
-    background-color: #eeeeee;
     height: 100vh;
     width: 100%;
+}
+
+header {
+    height: 65px;
+}
+
+.logo {
+    top: 2px;
+    left: 8px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    float: right;
+}
+
+header p {
+    float: right;
+    font-weight: bold;
+    border-bottom: solid 3px rgb(253, 85, 43);
+    margin: 25px 40px 0 20px;
+}
+
+footer {
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+
+.footer-logo {
+    height: 50px;
+    margin: 20px 0 30px 30px;
 }
