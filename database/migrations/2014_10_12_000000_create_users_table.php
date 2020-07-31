@@ -15,12 +15,20 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('username');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            // 基本的にGoogle OAuth認証にするためpasswordをnull許容に変更
+            $table->string('password')->nullable();;
+            // Google OAuth parameter
+            $table->string('uid')->nullable();
+            $table->string('provider')->nullable();
+            // role・employee table作成後 外部キーを追加する
+
             $table->rememberToken();
             $table->timestamps();
+            // 複合ユニークキー
+            $table->unique(['uid', 'provider']);
         });
     }
 
