@@ -37,8 +37,33 @@ header p {
     height: 70px;
 }
 
-ul {
+.nav-list {
+    margin: 0 0 0 130px;
     position: relative;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+#menu .list:hover {
+    color: rgb(253, 85, 43);
+}
+#menu li ul {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+#menu .list ul #logout a {
+    display: inline-block;
+    height: 20px;
+}
+#menu .list ul #logout a:hover {
+    color: rgb(253, 85, 43);
 }
 
 .list {
@@ -48,16 +73,16 @@ ul {
     font-weight: bold;
 }
 
-.logout {
-    position: absolute;
-    right: 80px;
-    font-size: 17px;
-    font-weight: bold;
+#list-account {
+    height: 50px;
+    width: 50px;
+    margin: 4px 0 0 0;
 }
 
 a {
     text-decoration: none;
     color: black;
+    height: 100px;
 }
 
 a:hover {

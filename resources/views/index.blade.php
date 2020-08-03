@@ -3,12 +3,18 @@
 @section('content')
   <main>
     <nav class="navigation">
-      <ul>
-        <li class="list"><a href="#">ユーザー</a></li>
-        <li class="list"><a href="#">各種申請</a></li>
-        <li class="list"><a href="#">勤怠一覧</a></li>
-        <span class="logout"><a href="#">ログアウト</a></span>
-      </ul>
+      <div class="nav-list">
+      <span><img src="img/account.png" alt="logo" id="list-account"></span>
+        <ul id="menu">
+          <li class="list" id="user-name"><a href="#">ユーザー</a>
+            <ul>
+              <li class="list" id="logout"><a href="#">ログアウト</a></li>
+            </ul>
+          </li>
+          <li class="list"><a href="#">各種申請</a></li>
+          <li class="list"><a href="#">勤怠一覧</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="container">
       <div class="time-field">
@@ -45,4 +51,11 @@
       </div>
     </div>
   </main>
+  <script>
+    $("#menu li").hover(function() {
+        $(this).children('ul').show();
+    }, function() {
+        $(this).children('ul').hide();
+    });
+  </script>
 @endsection
