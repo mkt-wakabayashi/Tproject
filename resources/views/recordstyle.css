@@ -91,28 +91,18 @@ img {
 
 
 .main {
+  display: flex;
+  width: 100%;
 }
 
 .main-left {
-  float: left;
   width: 600px;
 }
 
 .main-right {
-  float: right;
   overflow-y: scroll;
   height: 630px;
-  /* min-height:100% */
   padding-bottom: 80px;
-}
-
-.table {
-  /* height: 580px; */
-
-}
-
-tbody{
-
 }
 
 table th{
@@ -146,12 +136,10 @@ th + th {
   color: white;
   position: absolute;
   bottom: 0;
-  /* margin-top: auto; */
-
 }
 
 
 .footer-logo{
   height: 50px;
-  margin: 20px 0 30px 30px;
+  margin: 20px 0 0 30px;
 }
