@@ -8,76 +8,98 @@
     <title>HelloTechAcademy</title>
   </head>
   <body>
-    <div class ="header">
-      <p>勤怠管理システム</p>
-      <img class="logo" src="img/logo.jpg" alt="Logo">
-    </div>
-    <div class ="main">
-      <div class ="main-left">
-        <div class ="day">
-          <!-- <input type="date"></input> -->
-        </div>
-        <div class="calender">
-          <form method="get" action="input_date.html">
-            <p><input type="date" name="example" required></p>            
-            <p><input type="submit" value="勤怠記録を表示"></p>
-          </form>
-        </div>
+    <div id="wrapper">
+      <div class ="header">
+        <p>勤怠管理システム</p>
+        <img class="logo" src="img/logo.jpg" alt="Logo">
       </div>
-      <div class="main-right">
-        <div class="record">
-          <table>
-            <caption>8月3日 から 8月14日 までの勤怠記録</caption>
-            <tr>
-              <th>日付</th><th>出勤時刻</th><th>休憩入り時刻</th><th>休憩明け時刻</th><th>残業時間</th><th>退勤時刻</th><th>備考</th>
-            </tr>
-          
-            <tr>
-              <td>20/8/3</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td>
-            </tr>
+      <div class ="main">
+        <div class ="main-left">
+          <div class ="day">
+            <!-- <input type="date"></input> -->
+          </div>
+          <div class="calender">
+            <form method="get" action="input_date.html">
+              <p><input type="date" name="example" required></p>            
+              <p><input type="submit" value="勤怠記録を表示"></p>
+            </form>
+          </div>
+        </div>
+        <div class="main-right">
+          <div class="record">
+            <table>
+              <caption>8月3日 から 8月21日 までの勤怠記録</caption>
+              <tr>
+                <th>日付</th><th>出勤時刻</th><th>休憩入り時刻</th><th>休憩明け時刻</th><th>残業時間</th><th>退勤時刻</th><th>午前休</th><th>午後休</th><th>代休</th><th>休暇</th><th>備考</th>
+              </tr>
             
-            <tr>
-              <td>20/8/4</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>1:00</td> <td>19:00</td> <td></td>
-            </tr>
-          
-            <tr>
-              <td>20/8/5</td> <td>10:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td>電車遅延により遅刻</td>
-            </tr>
-          
-            <tr>
-              <td>20/8/6</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>有給</td>
-            </tr>
+              <tr>
+                <td>20/8/3</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+              
+              <tr>
+                <td>20/8/4</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>1:00</td> <td>19:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+            
+              <tr>
+                <td>20/8/5</td> <td>10:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td>電車遅延により遅刻</td>
+              </tr>
+            
+              <tr>
+                <td>20/8/6</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>●</td> <td>有給</td>
+              </tr>
 
-            <tr>
-              <td>20/8/7</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>2:00</td> <td>20:00</td> <td></td>
-            </tr>
-                      
-            <tr>
-              <td>20/8/10</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td>
-            </tr>
-                      
-            <tr>
-              <td>20/8/11</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td>
-            </tr>
-                      
-            <tr>
-              <td>20/8/12</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td>
-            </tr>
-                      
-            <tr>
-              <td>20/8/13</td>  <td></td> <td></td> <td></td> <td></td> <td></td> <td>有給</td>
-            </tr>
-                      
-            <tr>
-              <td>20/8/14</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td>
-            </tr>
+              <tr>
+                <td>20/8/7</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>2:00</td> <td>20:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/10</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/11</td> <td>13:00</td> <td></td> <td></td> <td>00:00</td> <td>18:00</td> <td>●</td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/12</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/13</td>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>●</td> <td>有給</td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/14</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
 
-          </table>
+              <tr>
+                <td>20/8/17</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>2:00</td> <td>20:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/18</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/19</td> <td>11:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td>家庭の事情により遅刻</td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/20</td>  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>●</td> <td>有給</td>
+              </tr>
+                        
+              <tr>
+                <td>20/8/21</td> <td>9:00</td> <td>12:00</td> <td>13:00</td> <td>00:00</td> <td>18:00</td> <td></td> <td></td> <td></td> <td></td> <td></td>
+              </tr>
+
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <img class="footer-logo" src="img/logo-black.jpg" alt="Logo-black">
+      <div class="footer">
+        <img class="footer-logo" src="img/logo-black.jpg" alt="Logo-black">
+      </div>
     </div>
   </body>
 </html>
