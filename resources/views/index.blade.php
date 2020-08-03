@@ -51,11 +51,5 @@
       </div>
     </div>
   </main>
-  <script>
-    $("#menu li").hover(function() {
-        $(this).children('ul').show();
-    }, function() {
-        $(this).children('ul').hide();
-    });
-  </script>
+  <script src="{{ mix('js/index.js') }}"></script>
 @endsection
