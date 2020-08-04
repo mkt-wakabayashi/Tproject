@@ -48,29 +48,17 @@ header p {
     left: 30px;
 }
 
-#menu .list:hover {
-    color: rgb(253, 85, 43);
-}
-#menu li ul {
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 0;
-}
-
-#menu .list ul #logout a {
-    display: inline-block;
-    height: 20px;
-}
-#menu .list ul #logout a:hover {
-    color: rgb(253, 85, 43);
-}
-
 .list {
     display: inline-block;
-    margin: 0 30px 0 0;
     font-size: 17px;
     font-weight: bold;
+    padding: 3px 15px;
+}
+
+#logout {
+    position: absolute;
+    top: 0;
+    right: -200%;
 }
 
 #list-account {
@@ -80,9 +68,8 @@ header p {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: rgb(253, 85, 43);
     color: black;
-    height: 100px;
 }
 
 a:hover {

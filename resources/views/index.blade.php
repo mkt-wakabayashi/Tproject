@@ -6,13 +6,10 @@
       <div class="nav-list">
       <span><img src="img/account.png" alt="logo" id="list-account"></span>
         <ul id="menu">
-          <li class="list" id="user-name"><a href="#">ユーザー</a>
-            <ul>
-              <li class="list" id="logout"><a href="#">ログアウト</a></li>
-            </ul>
-          </li>
+          <li class="list"><a href="#">ユーザー</a></li>
           <li class="list"><a href="#">各種申請</a></li>
           <li class="list"><a href="#">勤怠一覧</a></li>
+          <li class="list" id="logout"><a href="#">ログアウト</a></li>
         </ul>
       </div>
     </nav>
