@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+      //マイグレーション時のエラー回避
+        \Schema::defaultStringLength(191);
     }
 }
